@@ -98,4 +98,4 @@ C:\Users\SAHIL\source\repos\OrderItem\bin\Debug\netcoreapp3.1\Microsoft.Identity
 C:\Users\SAHIL\source\repos\OrderItem\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\SAHIL\source\repos\OrderItem\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\SAHIL\source\repos\OrderItem\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\SAHIL\source\repos\OrderItem\obj\Debug\netcoreapp3.1\OrderItem.csprojAssemblyReference.cache
+C:\Users\SAHIL\source\repos\OrderItem\bin\Debug\netcoreapp3.1\orderdepl.yaml

@@ -1,0 +1,34 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orderdepl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: OrderItem   
+  template:
+    metadata:
+      labels:
+        app: OrderItem
+    spec:
+      containers:
+      - name: orderitem
+        image: first1cr.azurecr.io/menuitemlistingrepos:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: firstapisn
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: orderitem
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: OrderItem
