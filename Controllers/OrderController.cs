@@ -40,7 +40,7 @@ namespace OrderItem.Controllers
         [Route("api/Order")]
         public Cart PostOrder([FromBody] Cart c)
         {
-            string token = GetToken("https://52.154.209.201/api/Token");
+            string token = GetToken("http://52.154.209.201/api/Token");
 
             obj.Id = 1;
             obj.userId = 1;
@@ -51,7 +51,7 @@ namespace OrderItem.Controllers
             using (var client = new HttpClient())
             {
                 // Setting Base address.  
-                client.BaseAddress = new Uri("https://52.154.209.201/");
+                client.BaseAddress = new Uri("http://52.154.209.201/");
 
                 // Setting content type.  
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
