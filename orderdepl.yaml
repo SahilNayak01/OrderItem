@@ -15,11 +15,11 @@ spec:
     spec:
       containers:
       - name: orderitem
-        image: first1cr.azurecr.io/menuitemlistingrepos:latest
+        image: first1cr.azurecr.io/orderitemrepos:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
-      - name: firstapisn
+      - name: secondapisn
 
 ---
 apiVersion: v1
